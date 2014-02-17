@@ -21,6 +21,8 @@ gem 'rack-handlers'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+gem 'gibbon'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
