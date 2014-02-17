@@ -8,6 +8,8 @@ gem 'sqlite3'
 
 gem 'unicorn'
 
+gem 'rack'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
