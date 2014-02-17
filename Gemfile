@@ -48,6 +48,7 @@ group :development do
   gem 'rails_layout'
   gem 'quiet_assets'
   gem 'better_errors'
+  gem 'figaro'
 end
 
 group :production do 

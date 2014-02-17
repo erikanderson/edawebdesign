@@ -20,3 +20,6 @@
 /config/application.yml
 /config/deploy.rb
 /config/deploy/production.rb  
+
+# Ignore application configuration
+/config/application.yml
