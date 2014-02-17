@@ -43,7 +43,7 @@ Edawebdesign::Application.configure do
   # config.force_ssl = true
 
   # Set to :debug to see everything in the log.
-  config.log_level = :info
+  config.log_level = :debug
 
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]
@@ -89,8 +89,8 @@ Edawebdesign::Application.configure do
   password: ENV["GMAIL_PASSWORD"]
 }
 # ActionMailer Config
-config.action_mailer.default_url_options = { :host => 'edawebdesign.com' }
+config.action_mailer.default_url_options = { :host => ENV["DOMAIN_NAME"] }
 config.action_mailer.delivery_method = :smtp
-config.action_mailer.raise_delivery_errors = true
+config.action_mailer.raise_delivery_errors = false
 config.action_mailer.perform_deliveries = true
 end
