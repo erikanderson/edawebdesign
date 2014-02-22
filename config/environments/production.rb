@@ -76,6 +76,7 @@ Edawebdesign::Application.configure do
   # config.autoflush_log = false
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
+  config.logger = SyslogLogger.new
   config.log_formatter = ::Logger::Formatter.new
 
   config.assets.debug = true

@@ -4,9 +4,9 @@
 # server in each group is considered to be the first
 # unless any hosts have the primary property set.
 # Don't declare `role :all`, it's a meta role
-role :app, %w{deploy@162.243.102.243}
-role :web, %w{deploy@162.243.102.243}
-role :db,  %w{deploy@162.243.102.243}
+role :app, %w{rails@162.243.102.243}
+role :web, %w{rails@162.243.102.243}
+role :db,  %w{rails@162.243.102.243}
 
 # Extended Server Syntax
 # ======================
@@ -14,7 +14,7 @@ role :db,  %w{deploy@162.243.102.243}
 # definition into the server list. The second argument
 # something that quacks like a hash can be used to set
 # extended properties on the server.
-server '162.243.102.243', user: 'deploy', roles: %w{web app}, my_property: :my_value
+server '162.243.102.243', user: 'rails', roles: %w{web app}, my_property: :my_value
 
 
 # you can set custom ssh options
